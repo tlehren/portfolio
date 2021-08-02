@@ -44,8 +44,8 @@ wpProjectContent.forEach((projectGridItem) => {
 
 //dark mode
 const button = document.querySelector(".darkmode");
-const main = document.querySelector(".main");
+const body = document.querySelector("body");
 
 button.addEventListener("click", () => {
-  main.classList.toggle("dark-bg");
+  body.classList.toggle("dark-bg");
 });

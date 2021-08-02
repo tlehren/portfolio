@@ -1,7 +1,7 @@
 /* Header */
 
 .header {
-  background-color: #f7f7f7;
+  background-color: var(--secondary-bg);
   animation: fade-in 1.5s;
 }
 .header .flex {
@@ -57,10 +57,8 @@
 }
 
 .wp {
-  background-color: #f7f7f7;
+  background-color: var(--secondary-bg);
 }
-
-
 
 /* Devices */
 

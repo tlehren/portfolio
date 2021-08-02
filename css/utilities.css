@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 :root {
-  --headings: #111;
+  --headings: #121212;
   --white: #fff;
-  --primary-color: tomato;
+  --primary-color: #ff6347;
   --secondary-color: #8e793e;
-  --body: #212121;
+  --body: rgba(7, 7, 7, 0.8);
   --primary-bg: #fff;
   --secondary-bg: #f7f7f7;
 }
@@ -14,10 +14,14 @@
 /* Dark Mode */
 
 .dark-bg {
-  --primary-bg: #212121;
-  --secondary-bg: #f7f7f7;
   --headings: #fff;
-  --body: #f7f7f7;
+  --white: #fff;
+  --primary-color: #ff8067;
+  --secondary-color: #212121;
+  --body: rgba(255, 255, 255, .9);
+  --primary-bg: #121212;
+  --secondary-bg: #212121;
+  transition: 0.3s ease-in-out;
 }
 
 * {
@@ -69,6 +73,7 @@ h3 {
 p,
 li {
   margin: 10px 0;
+  color: var(--body);
 }
 
 img {
@@ -110,7 +115,7 @@ img {
 }
 
 .btn-2 {
-  background-color: transparent;
+  background-color: var(--secondary-color);
   border: 1px solid #fff;
 }
 
