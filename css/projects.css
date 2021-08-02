@@ -1,108 +1,92 @@
-
 /* header */
 .header {
-    background: var(--secondary-color);
+  background-color: #f7f7f7;
 }
 .header .flex {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .nav li {
-    padding: 0 5px;
-    margin: 0 5px;
-    font-weight: 500;
-  }
+  padding: 0 5px;
+  margin: 0 5px;
+  font-weight: 500;
+}
 
 /* project-intro */
 
 .project-intro h1 {
-    padding-bottom: .25em;
+  padding-bottom: 0.25em;
 }
 
 .project-intro h3 {
-    padding-bottom: .5em;
-    font-size: 1.125em;
-    line-height: 1.11111111;
+  padding-bottom: 0.5em;
+  font-size: 1.125em;
+  line-height: 1.11111111;
 }
 
-  @media (min-width: 43.75em) {
-    .project-intro h3 {
-      line-height: 1.22222222;
-    }
+@media (min-width: 43.75em) {
+  .project-intro h3 {
+    line-height: 1.22222222;
   }
-
-
+}
 
 .project-intro .grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    gap: 2em;
-    
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  gap: 2em;
 }
 
-
-
 .project-intro-main {
-    grid-column: 2 / 8;
+  grid-column: 2 / 8;
 }
 
 .project-intro-mini-columns {
-    grid-column: 9 / 12;
-    display: flex;
-    justify-content: space-between;
-
+  grid-column: 9 / 12;
+  display: flex;
+  justify-content: space-between;
 }
 
-
 @media (max-width: 1024px) {
+  .project-intro-main {
+    grid-column: 1 / 13;
+  }
 
-    .project-intro-main {
-        grid-column: 1 / 13;
-    
-    }
-    
-    .project-intro-mini-1 {
-        grid-column: 1 / 6;
-    
-    }
-    
-    .project-intro-mini-2 {
-        grid-column: 6 / 13;
-    
-    }
+  .project-intro-mini-1 {
+    grid-column: 1 / 6;
+  }
 
-    
-    
+  .project-intro-mini-2 {
+    grid-column: 6 / 13;
+  }
 }
 
 /* full-width-image */
 
 .full-width-image {
-    height: 50vh;
-    background-color: cornflowerblue;
+  height: 50vh;
+  background-color: cornflowerblue;
 }
 
 /* showcase-header */
 
 .showcase-header .grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    gap: 2em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  gap: 2em;
 }
 
 .showcase-header h2 {
-    grid-column: 2 / 6;
+  grid-column: 2 / 6;
 }
 
 .showcase-header p {
-    grid-column: 6 / 11;
+  grid-column: 6 / 11;
 }
 
 /* showcase */
 
 .showcase {
-    background: #f7f7f7;
+  background: #f7f7f7;
 }
-

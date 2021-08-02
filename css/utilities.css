@@ -1,11 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 :root {
-  --black: #111;
+  --headings: #111;
   --white: #fff;
-  --light-gold: #ad974f;
-  --dark-gold: #8e793e;
-  --body: #333;
+  --primary-color: tomato;
+  --secondary-color: #8e793e;
+  --body: #212121;
+  --primary-bg: #fff;
+  --secondary-bg: #f7f7f7;
+}
+
+/* Dark Mode */
+
+.dark-bg {
+  --primary-bg: #212121;
+  --secondary-bg: #f7f7f7;
+  --headings: #fff;
+  --body: #f7f7f7;
 }
 
 * {
@@ -13,6 +25,10 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+
+.main {
+  background-color: var(--primary-bg);
 }
 
 body,
@@ -38,15 +54,16 @@ a {
 
 h1,
 h2 {
-  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   line-height: 1.2;
   margin: 10px 0;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--headings);
 }
 
 h3 {
-  color: var(--black);
+  color: var(--headings);
 }
 
 p,
@@ -77,9 +94,9 @@ img {
   display: inline-block;
   padding: 10px 30px;
   cursor: pointer;
-  background-color: var(--light-gold);
+  background-color: var(--primary-color);
   color: white;
-  border: 2px solid var(--light-gold);
+  border: 2px solid var(--primary-color);
   border-radius: 3px;
   text-transform: uppercase;
   margin-top: 1em;
@@ -98,7 +115,7 @@ img {
 }
 
 .link {
-  color: var(--light-gold);
+  color: var(--primary-color);
   text-decoration: underline;
   transition: 0.2s ease-in-out;
 }
