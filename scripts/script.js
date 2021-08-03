@@ -43,10 +43,14 @@ wpProjectContent.forEach((projectGridItem) => {
 });
 
 //dark mode
-const button = document.querySelector(".darkmode");
+const button = document.querySelector(".header i");
 const body = document.querySelector("body");
 
 button.addEventListener("click", () => {
   body.classList.toggle("dark-bg");
-  
+  if (body.classList.contains("dark-bg")) {
+    button.className = "fas fa-sun fa-2x";
+  } else {
+    button.className = "fas fa-moon fa-2x";
+  }
 });
