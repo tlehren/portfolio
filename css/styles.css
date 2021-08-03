@@ -1,8 +1,20 @@
 /* Header */
 
 .header {
-  background-color: var(--secondary-bg);
+  background-color: var(--primary-bg);
   animation: fade-in 1.5s;
+}
+
+.header img {
+  max-width: 50px;
+}
+
+.header a {
+  transition: 0.23s ease-in-out;
+}
+
+.header a:hover {
+  opacity: 0.75;
 }
 .header .flex {
   justify-content: space-between;
@@ -15,19 +27,22 @@
 }
 
 /* Hero */
-
-.hero img {
-  max-width: 50%;
-  border-radius: 50%;
-  justify-self: center;
+.hero {
+  height: 75vh;
+  animation: fade-in 1.5s;
 }
 
-.hero img::after {
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid red;
+.hero .flex {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hero h3 {
+  max-width: 40ch;
+}
+
+.hero h3 {
+  font-weight: 300;
 }
 
 /* Projects */
@@ -56,7 +71,7 @@
   margin: 20px;
 }
 
-.wp {
+.live {
   background-color: var(--secondary-bg);
 }
 

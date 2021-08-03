@@ -29,8 +29,8 @@ const DH = new Projects(
 const TBH = new Projects(
   "Told By Her Portfolio",
   "Designed & built a portfolio website for author Mitchka Herard",
-  "images/duncanHatchArtTile.png",
-  "Told by Hee logo",
+  "images/tbhTile.svg",
+  "Told by Her logo",
   "two-stroke-motors.html"
 );
 
@@ -44,4 +44,4 @@ const PJ = new Projects(
 
 export const liveProjects = [TSM, RF];
 export const wpProjects = [DH, TBH, PJ];
-export const experiments = [];
+export const practiceProjects = [TBH];
