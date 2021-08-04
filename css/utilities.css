@@ -44,7 +44,6 @@ blockquote {
   font-size: 18px;
   line-height: 1.8;
   color: var(--body);
-  overflow-x: hidden;
 }
 
 ul {
@@ -84,7 +83,7 @@ img {
   max-width: 1600px;
   width: 90%;
   margin: 0 auto;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 .hamburger {
