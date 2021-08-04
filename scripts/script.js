@@ -54,3 +54,17 @@ button.addEventListener("click", () => {
     button.className = "fas fa-moon fa-2x";
   }
 });
+
+//hamburger toggle
+const navToggle = document.querySelector(".navToggle");
+
+navToggle.addEventListener("click", () => {
+  document.body.classList.toggle("navOpen");
+});
+
+const navClose = document.querySelector(".navClose");
+
+navClose.addEventListener("click", () => {
+  document.body.classList.toggle("navOpen");
+  document.body.classList.toggle("modal");
+});

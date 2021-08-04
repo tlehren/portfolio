@@ -44,6 +44,7 @@ blockquote {
   font-size: 18px;
   line-height: 1.8;
   color: var(--body);
+  overflow-x: hidden;
 }
 
 ul {
@@ -81,9 +82,85 @@ img {
 
 .container {
   max-width: 1600px;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
   overflow: auto;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+/* navigation */
+
+.nav {
+  display: block;
+  background-color: var(--primary-bg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 5em 10em;
+}
+
+.navOpen .nav {
+  transform: translateX(0);
+}
+
+.navToggle {
+  position: absolute;
+  top: 2em;
+  padding: 1em 0.5em;
+  border: 0;
+
+  z-index: 100;
+  background-color: var(--secondary-bg);
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 1.5em;
+  height: 4px;
+  background-color: var(--headings);
+
+  transition: transform 0.25s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  bottom: 8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+.navOpen .hamburger {
+  transform: rotate(45deg);
+}
+
+.navOpen .hamburger::before {
+  opacity: 0;
+}
+
+.navOpen .hamburger::after {
+  transform: rotate(90deg) translate(-8px);
 }
 
 .card {
@@ -125,6 +202,16 @@ img {
 
 .link:hover {
   opacity: 75%;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Layout */

@@ -16,15 +16,19 @@
 .header a:hover {
   opacity: 0.75;
 }
+
+.header i {
+  transition: 0.23s ease-in-out;
+}
+
+.header i:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
 .header .flex {
   justify-content: space-between;
 }
 
-.nav li {
-  padding: 0 5px;
-  margin: 0 5px;
-  font-weight: 500;
-}
 
 /* Hero */
 .hero {

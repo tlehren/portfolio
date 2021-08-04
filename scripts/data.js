@@ -42,6 +42,6 @@ const PJ = new Projects(
   "two-stroke-motors.html"
 );
 
-export const liveProjects = [TSM, RF];
+export const liveProjects = [RF, TSM];
 export const wpProjects = [DH, TBH, PJ];
 export const practiceProjects = [TBH];
