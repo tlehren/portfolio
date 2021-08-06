@@ -6,7 +6,7 @@
 }
 
 .header img {
-  max-width: 50px;
+  max-width: 250px;
 }
 
 .header a {
@@ -29,7 +29,6 @@
   justify-content: space-between;
 }
 
-
 /* Hero */
 .hero {
   height: 75vh;
@@ -47,6 +46,15 @@
 
 .hero h3 {
   font-weight: 300;
+}
+
+.hero .cv {
+  background-color: transparent;
+  color: var(--body);
+}
+
+.hero i {
+  padding-left: .5em;
 }
 
 /* Projects */

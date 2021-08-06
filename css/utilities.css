@@ -117,8 +117,18 @@ img {
 .navMenu {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   height: 100vh;
-  padding: 5em 10em;
+  padding: 3em 6em;
+}
+
+.navItem {
+  font-size: 1.5em ;
+}
+
+.navMenu i {
+  padding-right: 1em;
+  color: var(--primary-color);
 }
 
 .navOpen .nav {
@@ -133,6 +143,7 @@ img {
   border: 0;
   z-index: 100;
   background-color: var(--secondary-bg);
+  cursor: pointer;
 }
 
 .hamburger,
