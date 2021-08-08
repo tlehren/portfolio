@@ -37,11 +37,11 @@
 
 @media (max-width: 1024px) {
   .projectMain {
-    grid-column: 1 / 13;
+    grid-column: 2 / 13;
   }
 
   .projectColumns {
-    grid-column: 1 / 9;
+    grid-column: 2 / 9;
   }
 }
 
