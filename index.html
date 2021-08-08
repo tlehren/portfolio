@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/menu.css" />
     <script type="module" src="scripts/projects.js"></script>
     <script type="module" src="scripts/data.js"></script>
     <script type="module" src="scripts/script.js"></script>
@@ -20,20 +21,17 @@
   <body>
     <div class="wrapper">
       <!-- Header -->
-    <header class="header py-1">
+    <header class="header py-2">
       <div class="container flex">
         <a href="/"><img src="images/tlWordMark.svg" alt="logo"></a>
-        <i class="fas fa-moon fa-2x darkmode"></i>
         <div class="header-right">
           <button class="navToggle"><span class="hamburger"></span></button>
           <nav class="nav">
-            <div class="navHeader">
-            </div>
               <ul class="navMenu">
-                <li class="navItem"><a href="#" class="navLink"><i class="fas fa-home"></i>Home</a></li>
-                <li class="navItem"><a href="#" class="navLink"><i class="fas fa-briefcase"></i>My Work</a></li>
-                <li class="navItem"><a href="#" class="navLink"><i class="fas fa-lightbulb"></i>About</a></li>
-                <li class="navItem"><a href="#" class="navLink"><i class="fas fa-blender-phone"></i>Contact</a></li>
+                <li class="navItem"><a href="#" class="navLink">Home</a></li>
+                <li class="navItem"><a href="#work" class="navLink">My Work</a></li>
+                <li class="navItem"><a href="#" class="navLink">About</a></li>
+                <li class="navItem"></i><a href="#" class="navLink">Contact</a></li>
               </ul>
             </nav>
         </div>
@@ -49,7 +47,7 @@
             <h3> I'm a developer, designer, and human working with code to create cool stuff.</h3>
             <div class="hero-buttons">
               <a href="#work"><button class="btn">See my work</button></a>
-              <a href=""><button class="btn cv">Download Resume <i class="fas fa-download"></i></button></a>
+              <a href="tylerLehrenResume.pdf" download=""><button class="btn cv">Download Resume <i class="fas fa-download"></i></button></a>
             </div>
             
       </section>
@@ -89,7 +87,9 @@
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="footer">
+      <i class="fas fa-moon fa-2x darkmode"></i>
+    </footer>
 
     </div>
     

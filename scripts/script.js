@@ -43,7 +43,7 @@ wpProjectContent.forEach((projectGridItem) => {
 });
 
 //dark mode
-const button = document.querySelector(".header i");
+const button = document.querySelector(".footer i");
 const body = document.querySelector("body");
 
 button.addEventListener("click", () => {
@@ -56,15 +56,16 @@ button.addEventListener("click", () => {
 });
 
 //hamburger toggle
-const navToggle = document.querySelector(".navToggle");
+// const navToggle = document.querySelector(".navToggle");
 
-navToggle.addEventListener("click", () => {
-  document.body.classList.toggle("navOpen");
-});
+// navToggle.addEventListener("click", () => {
+//   document.body.classList.toggle("navOpen");
+// });
 
-const navClose = document.querySelector(".navClose");
+// const navClose = document.querySelector(".navClose");
 
-navClose.addEventListener("click", () => {
-  document.body.classList.toggle("navOpen");
-  document.body.classList.toggle("modal");
-});
+// navClose.addEventListener("click", () => {
+//   document.body.classList.toggle("navOpen");
+//   document.body.classList.toggle("modal");
+// });
+

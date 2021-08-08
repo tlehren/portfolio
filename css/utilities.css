@@ -90,99 +90,6 @@ img {
   position: relative;
 }
 
-.hamburger {
-  display: block;
-  position: relative;
-}
-
-/* navigation */
-
-.nav {
-  display: block;
-  background-color: var(--primary-bg);
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1.5em;
-  box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
-  transform: translateX(100%);
-  transition: transform 0.3s cubic-bezier(0.5, 0, 0.5, 1);
-}
-
-.navHeader {
-  border-bottom: 1px solid var(--secondary-bg);
-  width: 100%;
-}
-
-.navMenu {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  height: 100vh;
-  padding: 3em 6em;
-}
-
-.navItem {
-  font-size: 1.5em ;
-}
-
-.navMenu i {
-  padding-right: 1em;
-  color: var(--primary-color);
-}
-
-.navOpen .nav {
-  transform: translateX(0);
-}
-
-.navToggle {
-  position: absolute;
-  right: 2em;
-  top: 1.5em;
-  padding: 1em 0.5em;
-  border: 0;
-  z-index: 100;
-  background-color: var(--secondary-bg);
-  cursor: pointer;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  width: 1.5em;
-  height: 4px;
-  background-color: var(--headings);
-
-  transition: transform 0.25s ease-in-out;
-}
-
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  position: absolute;
-  left: 0;
-}
-
-.hamburger::before {
-  bottom: 8px;
-}
-
-.hamburger::after {
-  top: 8px;
-}
-
-.navOpen .hamburger {
-  transform: rotate(45deg);
-}
-
-.navOpen .hamburger::before {
-  opacity: 0;
-}
-
-.navOpen .hamburger::after {
-  transform: rotate(90deg) translate(-8px);
-}
-
 .card {
   background-color: white;
   border-radius: 10px;
@@ -211,7 +118,9 @@ img {
 }
 
 .btn-2 {
-  background-color: var(--secondary-color);
+  background-color: transparent;
+  color: var(--body);
+  border: 2px solid var(--body);
 }
 
 .link {
@@ -258,6 +167,27 @@ img {
 
 .grid-r {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Devices */
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+/* animation */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Margin */

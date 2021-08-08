@@ -1,0 +1,10 @@
+/*  desktop navigation */
+
+.navMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.navItem {
+  padding: 0 0.5em;
+}
