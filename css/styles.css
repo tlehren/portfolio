@@ -6,7 +6,7 @@
 }
 
 .header img {
-  max-width: 250px;
+  max-width: 50px;
 }
 
 .header a {
@@ -17,7 +17,8 @@
   opacity: 0.75;
 }
 
-.header .flex {
+.header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -80,4 +81,3 @@
 .live {
   background-color: var(--secondary-bg);
 }
-

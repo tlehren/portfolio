@@ -1,10 +1,82 @@
 /*  desktop navigation */
 
-.navMenu {
+/* .navMenu {
   display: flex;
   flex-direction: row;
 }
 
 .navItem {
   padding: 0 0.5em;
+} */
+
+.headerRight {
+  position: relative;
+}
+
+/* hamburger  */
+
+.navToggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em 0.5em;
+  border: none;
+  background: var(--secondary-bg);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger:after {
+  height: 3px;
+  width: 1em;
+  background-color: var(--body);
+}
+
+.hamburger::before,
+.hamburger:after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  bottom: 6px;
+}
+
+.hamburger:after {
+  top: 6px;
+}
+
+/* mobile nav */
+
+.nav {
+  position: fixed;
+  inset: 14px;
+  background-color: bisque;
+  text-transform: uppercase;
+  opacity: 0%;
+  transition: 0.3s ease-in-out;
+}
+
+.navMenu {
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+  height: 80%;
+}
+
+.navBottom {
+  height: 20%;
+  background-color: darkkhaki;
+}
+
+.navOpen .nav {
+  opacity: 1;
 }

@@ -56,16 +56,9 @@ button.addEventListener("click", () => {
 });
 
 //hamburger toggle
-// const navToggle = document.querySelector(".navToggle");
+const navToggle = document.querySelector(".navToggle");
 
-// navToggle.addEventListener("click", () => {
-//   document.body.classList.toggle("navOpen");
-// });
-
-// const navClose = document.querySelector(".navClose");
-
-// navClose.addEventListener("click", () => {
-//   document.body.classList.toggle("navOpen");
-//   document.body.classList.toggle("modal");
-// });
-
+navToggle.addEventListener("click", () => {
+  console.log("test");
+  document.body.classList.toggle("navOpen");
+});
