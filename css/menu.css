@@ -9,7 +9,6 @@
   padding: 0 0.5em;
 } */
 
-
 /* hamburger  */
 
 .navToggle {
@@ -55,7 +54,7 @@
 
 .nav {
   position: fixed;
-  inset: .5em;
+  inset: 0;
   background-color: bisque;
   text-transform: uppercase;
   opacity: 0%;
