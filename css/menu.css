@@ -9,9 +9,6 @@
   padding: 0 0.5em;
 } */
 
-.headerRight {
-  
-}
 
 /* hamburger  */
 
@@ -58,11 +55,12 @@
 
 .nav {
   position: fixed;
-  inset: 14px;
+  inset: .5em;
   background-color: bisque;
   text-transform: uppercase;
   opacity: 0%;
   transition: 0.3s ease-in-out;
+  z-index: 2;
 }
 
 .navMenu {
