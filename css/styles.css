@@ -3,6 +3,7 @@
 .header {
   background-color: var(--primary-bg);
   animation: fade-in 1.5s;
+  
 }
 
 .header img {
