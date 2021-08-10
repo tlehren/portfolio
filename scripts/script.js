@@ -55,10 +55,19 @@ button.addEventListener("click", () => {
   }
 });
 
-//hamburger toggle
+//hamburger toggle open
 const navToggle = document.querySelector(".navToggle");
 
 navToggle.addEventListener("click", () => {
-  console.log("test");
   document.body.classList.toggle("navOpen");
+});
+
+//hamburger toggle close on menu click
+
+const navItem = document.querySelectorAll(".navItem");
+
+navItem.forEach((navItem) => {
+  navItem.addEventListener("click", () => {
+    document.body.classList.toggle("navOpen");
+  });
 });
