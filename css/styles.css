@@ -3,7 +3,12 @@
 .header {
   background-color: var(--primary-bg);
   animation: fade-in 1.5s;
-  
+}
+
+.header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header img {
@@ -16,12 +21,6 @@
 
 .header a:hover {
   opacity: 0.75;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* Hero */
