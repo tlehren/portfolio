@@ -9,6 +9,8 @@
   --body: rgba(7, 7, 7, 0.8);
   --primary-bg: #fff;
   --secondary-bg: #f8f8ff;
+  --poppins: "Poppins", sans-serif;
+  --roboto: "Roboto", sans-serif;
 }
 
 /* Dark Mode */
@@ -40,7 +42,7 @@ textarea,
 button,
 sup,
 blockquote {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--roboto);
   font-size: 20px;
   line-height: 1.8;
   color: var(--body);
@@ -57,7 +59,7 @@ a {
 
 h1,
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--poppins);
   font-weight: 800;
   line-height: 1.2;
   margin: 10px 0;
