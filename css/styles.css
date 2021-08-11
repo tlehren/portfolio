@@ -52,6 +52,16 @@
   padding-left: 0.5em;
 }
 
+.heroButtons {
+  display: flex;
+}
+
+@media (max-width: 760px) {
+  .heroButtons {
+    flex-direction: column-reverse;
+  }
+}
+
 /* Projects */
 
 .projects {
