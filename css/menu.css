@@ -83,15 +83,6 @@
   }
 }
 
-.navBottom {
-  height: 25%;
-  background-color: var(--secondary-bg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 /* on-click changes */
 .navOpen .nav {
   opacity: 1;
