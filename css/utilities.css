@@ -109,7 +109,7 @@ img {
   cursor: pointer;
   background-color: var(--primary-color);
   color: var(--primary-bg);
-  border-radius: 50px;
+  border-radius: 5px;
   border: none;
   text-transform: uppercase;
   margin-top: 1em;
@@ -133,10 +133,20 @@ img {
   color: var(--primary-color);
   text-decoration: underline;
   transition: 0.2s ease-in-out;
+  display: block;
 }
 
 .link:hover {
   opacity: 75%;
+}
+
+.socialLinks i {
+  margin-right: 1rem;
+  opacity: 0.75;
+}
+
+.socialLinks i:hover {
+  opacity: 1;
 }
 
 .modal {
