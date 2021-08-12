@@ -79,19 +79,19 @@
   color: var(--headings);
 }
 
-@media (min-width: 43.75em) {
+@media (max-width: 480px) {
   .navItem {
-    font-size: 2.5em;
+    font-size: 1.75em;
     line-height: 1.125;
   }
 }
 
-@media (min-width: 56.25em) {
+/* @media (max-width: 768px) {
   .navItem {
-    font-size: 1.75em;
+    font-size: 3em;
     line-height: 1.05;
   }
-}
+} */
 
 .menuContact p > i {
   color: var(--primary-color);
