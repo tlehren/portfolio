@@ -83,6 +83,20 @@
   gap: 1em;
 }
 
+.project-item {
+  padding: 30px;
+}
+
+.project-item > p {
+  max-width: 88%;
+}
+
+@media (max-width: 760px) {
+  .project-item > p {
+    max-width: 100%;
+  }
+}
+
 .live {
   background-color: var(--secondary-bg);
 }
