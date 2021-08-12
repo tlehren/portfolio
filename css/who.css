@@ -1,3 +1,7 @@
+.main {
+  animation: fade-in 1.5s;
+}
+
 .whoMedia img {
   max-width: 40%;
   border-radius: 50%;

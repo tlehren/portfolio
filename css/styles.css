@@ -1,27 +1,3 @@
-/* Header */
-
-.header {
-  background-color: var(--primary-bg);
-  animation: fade-in 1.5s;
-}
-
-.header > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header img {
-  max-width: 50px;
-}
-
-.header a > img {
-  transition: 0.23s ease-in-out;
-}
-
-.header a > img:hover {
-  opacity: 0.75;
-}
 
 /* Hero */
 .hero {

@@ -163,6 +163,29 @@ img {
   overflow: hidden;
 }
 
+/* Header */
+
+.header {
+  background-color: var(--primary-bg);
+  animation: fade-in 1.5s;
+}
+
+.header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100px;
+  transition: 0.23s ease-in-out;
+  z-index: 3;
+}
+
+.logo:hover {
+  opacity: 0.75;
+}
+
 /* Layout */
 
 .flex {
