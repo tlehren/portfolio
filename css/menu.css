@@ -44,15 +44,23 @@
 
 .nav {
   position: fixed;
-  inset: 0em;
-  width: 100%;
-  height: 100%;
-  background-color: var(--primary-bg);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--secondary-bg);
   opacity: 0%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   transition: 0.4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .navMenu {
@@ -63,29 +71,33 @@
 
 .navItem {
   font-family: var(--poppins);
-  font-size: 1.625em;
-  line-height: 1.15384615;
+  font-size: 2.5em;
+  line-height: 1.25;
   font-weight: 700;
   color: var(--headings);
 }
 
 @media (min-width: 43.75em) {
   .navItem {
-    font-size: 2em;
-    line-height: 1.25;
+    font-size: 2.5em;
+    line-height: 1.125;
   }
 }
 
 @media (min-width: 56.25em) {
   .navItem {
-    font-size: 2.25em;
-    line-height: 1.25;
+    font-size: 3em;
+    line-height: 1.05;
   }
 }
 
 .menuContact p > i {
   color: var(--primary-color);
   padding-right: 0.75rem;
+}
+
+.socialLinks {
+  margin-top: 1.5em;
 }
 
 /* on-click changes */

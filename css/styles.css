@@ -15,11 +15,11 @@
   max-width: 50px;
 }
 
-.header a {
+.header a > img {
   transition: 0.23s ease-in-out;
 }
 
-.header a:hover {
+.header a > img:hover {
   opacity: 0.75;
 }
 
