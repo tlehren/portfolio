@@ -62,7 +62,6 @@
     justify-content: space-evenly;
     align-items: flex-start;
     padding-left: 3em;
-    
   }
 }
 
@@ -97,6 +96,12 @@
 .menuContact p > i {
   color: var(--primary-color);
   padding-right: 0.75rem;
+}
+
+@media (max-width: 760px) {
+  .menuContact {
+    margin-top: -2em;
+  }
 }
 
 .socialLinks {
