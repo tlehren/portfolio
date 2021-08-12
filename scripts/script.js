@@ -60,6 +60,7 @@ const navToggle = document.querySelector(".navToggle");
 
 navToggle.addEventListener("click", () => {
   document.body.classList.toggle("navOpen");
+  document.body.classList.toggle("overflow");
 });
 
 //hamburger toggle close on menu click

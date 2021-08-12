@@ -86,13 +86,6 @@
   }
 }
 
-/* @media (max-width: 768px) {
-  .navItem {
-    font-size: 3em;
-    line-height: 1.05;
-  }
-} */
-
 .menuContact p > i {
   color: var(--primary-color);
   padding-right: 0.75rem;
@@ -112,11 +105,6 @@
 .navOpen .nav {
   opacity: 1;
   z-index: 2;
-}
-
-.navOpen .main {
-  position: fixed;
-  overflow: hidden;
 }
 
 .navOpen .hamburger {
