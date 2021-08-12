@@ -83,11 +83,6 @@
   gap: 1em;
 }
 
-.projects .project-item {
-  padding: 30px;
-  margin: 20px;
-}
-
 .live {
   background-color: var(--secondary-bg);
 }

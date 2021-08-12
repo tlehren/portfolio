@@ -116,6 +116,7 @@
 
 .navOpen .main {
   position: fixed;
+  overflow: hidden;
 }
 
 .navOpen .hamburger {
