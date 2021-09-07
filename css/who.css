@@ -1,14 +1,19 @@
-.main {
+/* intro */
+.intro {
+  background-color: var(--primary-bg);
   animation: fade-in 1.5s;
 }
 
-.whoMedia img {
-  max-width: 40%;
+.whoIMG {
+  max-width: 65%;
   border-radius: 50%;
+  place-self: center;
 }
 
-@media (max-width: 760px) {
-  .main {
-    text-align: center;
-  }
+/* skills */
+
+.skills {
+  background-color: var(--secondary-bg);
 }
+
+
