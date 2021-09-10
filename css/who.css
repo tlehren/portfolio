@@ -20,6 +20,12 @@
   background-color: var(--secondary-bg);
 }
 
+@media (max-width: 769px) {
+  .skills {
+    margin: 0;
+  }
+}
+
 .skills i {
   padding-bottom: 1rem;
 }
@@ -41,7 +47,7 @@
 }
 
 .five i {
-  color: #92003B;
+  color: #92003b;
 }
 
 .six i {
