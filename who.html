@@ -19,6 +19,7 @@
     <script type="module" src="scripts/script.js"></script>
   </head>
   <body>
+    <!-- header -->
     <header class="header py-2">
       <div class="container">
         <a href="/" class="logo"><img src="images/tlWordMark.svg" alt="logo"></a>
@@ -53,39 +54,59 @@
           <div class="whoIntro">
             <h1 style="color: var(--primary-color)">Who, me?</h1>
             <p>
-              Hello! I'm Tyler and I'm a Burlington VT based web designer & developer. I aim to create meaningful & captivating digital experiences that are authentic, aesthetically pleasing, and accessible. 
+              Hello! I'm Tyler and I'm a Burlington, VT based web designer & developer. I aim to create meaningful & captivating digital experiences that are authentic, aesthetically pleasing, and accessible. 
               When I'm not busy educating people on the difference between fonts & typefaces, I can be found hiking or testing the pH level of Lake Champlain.
             </p>
+            <div class="socialLinks">
+              <a href="https://github.com/tlehren" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+              <a href="https://www.behance.net/tylerlehren" target="_blank"><i class="fab fa-behance fa-lg"></i></a>
+              <a href="https://dribbble.com/tlehren" target="_blank"><i class="fab fa-dribbble fa-lg"></i></a>
+              <a href="https://www.linkedin.com/in/tylerlehren/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
           </div>
           <img class="whoIMG" src="images/me.jpeg" alt="" />
         </div>
       </section>
-      <section class="skills py-5">
+
+      <!-- skills -->
+
+      <section class="skills py-5 mx-5">
         <div class=" container text-center">
-          <h2>Stuff I'm good at</h2>
-          <div class="skillsGrid grid grid-r">
-            <article class="skillItem card">
-              <i class="fab fa-html5 fa-8x"></i>
-              <h3>HTML</h3>
-            </article>
-            <article class="skillItem card">
-              <i class="fab fa-css3-alt fa-8x"></i>
-              <h3>CSS</h3>
-            </article>
-            <article class="skillItem card">
-              <i class="fab fa-js-square fa-8x"></i>
-              <h3>JavaScript</h3>
-            </article>
+          <h2>Stuff I'm Good At</h2>
+            <div class="skillsGrid">
+              <article class="skillItem card one">
+                <i class="fab fa-html5 fa-3x"></i>
+                <h4>HTML</h4>
+              </article>
+              <article class="skillItem card two">
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <h4>CSS</h4>
+              </article>
+              <article class="skillItem card three">
+                <i class="fab fa-js-square fa-3x"></i>
+                <h4>JavaScript</h4>
+              </article>
+              <article class="skillItem card four">
+                <i class="fab fa-wordpress fa-3x"></i>
+                <h4>WordPress</h4>
+              </article>
+              <article class="skillItem card five">
+                <i class="fab fa-elementor fa-3x"></i>
+                <h4>Elementor</h4>
+              </article>
+              <article class="skillItem card six">
+                <i class="fas fa-pencil-ruler fa-3x"></i>
+                <h4>UI/UX</h4>
+              </article>
           </div>
         </div>
-
       </section>
 
-
-      
-        
-        
-        <iframe
+      <!-- tunes -->
+      <section class="tunes">
+        <div class="container py-5">
+          <h2>Stuff I'm Listening to</h2>
+          <iframe
           src="https://open.spotify.com/embed/playlist/3vtoWUcJR9SjIh22ENXZiK?theme=0"
           width="100%"
           height="380"
@@ -93,7 +114,29 @@
           allowtransparency="true"
           allow="encrypted-media"
         ></iframe>
-      
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <section class="cta">
+          <div class="container text-center py-5">
+            <h2>Dig my work?<br> Let's start a project.</h2>
+            <a href="#"><button class="btn">Contact Me</button></a>
+          </div>
+        </section>
+        <section class="footerBottom">
+          <div class="container flex py-4">
+            <div class="socialLinks">
+              <a href="https://github.com/tlehren" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+              <a href="https://www.behance.net/tylerlehren" target="_blank"><i class="fab fa-behance fa-lg"></i></a>
+              <a href="https://dribbble.com/tlehren" target="_blank"><i class="fab fa-dribbble fa-lg"></i></a>
+              <a href="https://www.linkedin.com/in/tylerlehren/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+            <p>Copyright &copy Tyler Lehren 2021</p>
+          </div>
+        </section>
+      </footer>
     </main>
   </body>
 </html>
