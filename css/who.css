@@ -12,6 +12,8 @@
   max-width: 65%;
   border-radius: 50%;
   place-self: center;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
 /* skills */
@@ -59,15 +61,17 @@
 }
 
 .skills .card {
-  box-shadow: none;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
   border-radius: 2px;
   border-bottom: 3px solid var(--secondary-color);
 }
 
 .skillsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 300px));
   justify-content: center;
+  gap: 1em;
   padding-top: 1em;
 }
 

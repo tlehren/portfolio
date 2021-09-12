@@ -48,7 +48,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--primary-bg);
+  background-color: var(--headings);
   opacity: 0;
   display: flex;
   justify-content: space-around;
@@ -78,7 +78,7 @@
   font-size: 3em;
   line-height: 1.25;
   font-weight: 700;
-  color: var(--headings);
+  color: var(--primary-bg);
   transition: 0.23s ease-in-out;
 }
 
@@ -96,6 +96,7 @@
 .menuContact p {
   font-size: 0.9em;
   padding-top: 0.25em;
+  color: var(--primary-bg);
 }
 .menuContact p > i {
   color: var(--primary-color);
@@ -110,6 +111,7 @@
 
 .header .socialLinks {
   margin-top: 1.5em;
+  color: var(--primary-bg);
 }
 
 /* on-click changes */
@@ -128,4 +130,8 @@
 
 .navOpen .hamburger::after {
   transform: rotate(90deg) translate(-8px);
+}
+
+.navOpen .logo {
+  filter: invert(1);
 }
