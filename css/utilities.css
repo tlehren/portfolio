@@ -82,6 +82,11 @@ img {
   width: 100%;
 }
 
+svg {
+  height: 100%;
+  width: 100%;
+}
+
 .container {
   max-width: 1600px;
   width: 90%;
