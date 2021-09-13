@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="images/tlWordMark.svg" />
-    <title>Tyler Lehren</title>
+    <title>Tyler Lehren - Connect</title>
     <link rel="shortcut icon" type="image/jpg" href="images/tlFav.svg"/>
     <link
       rel="stylesheet"
@@ -14,16 +14,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/utilities.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/connect.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <script type="module" src="scripts/projects.js"></script>
     <script type="module" src="scripts/data.js"></script>
-    <script type="module" src="scripts/projectAppend.js"></script>
     <script type="module" src="scripts/script.js"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <!-- Header -->
+    <!-- header -->
     <header class="header py-2">
       <div class="container">
         <a href="/" class="logo"><img src="images/tlWordMark.svg" alt="logo"></a>
@@ -47,69 +45,71 @@
                   <a href="https://www.linkedin.com/in/tylerlehren/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
                 </div>
               </div>
-              
             </div>
           </nav>
         </div>
       </div>
     </header>
-
-    <!-- Main -->
     <main class="main">
-      <!-- hero -->
-      <section class="hero">
-        <div class="container text-center flex py-5">
-            <h1>Hey, I'm Tyler<a href="https://www.youtube.com/watch?v=Y4TW70xVkmU&ab_channel=gratefuldeadosaurusrex" target="blank"><span style="color: var(--primary-color);">.</span></a></h1>
-            <h3> I'm a developer, designer, and human working with code to create cool stuff.</h3>
-            <div class="heroButtons">
-              <a href="#work" class="btn">See my work</a>
-              <a href="tylerLehrenResume.pdf" download="" class="btn cv">Download Resume <i class="fas fa-download"></i></a>
+        <!-- contact form -->
+        <section class="connect">
+            <div class="container grid py-5">
+                <div class="menuContact bg2">
+                    <h1>Let's Connect</h1>
+                    <p>Fill out the form our use one of the contact options below to get in touch!</p>
+                    <a href="mailto:tmlehren@gmail.com" class="link">tmlehren@gmail.com</a>
+                    <a href="tel:2035566329" class="link">(203)556-6329</a>
+                    <p><i class="fas fa-map-marker-alt fa-lg"></i>Burlington, VT</p>
+                    <div class="socialLinks">
+                        <a href="https://github.com/tlehren" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="https://www.behance.net/tylerlehren" target="_blank"><i class="fab fa-behance fa-lg"></i></a>
+                        <a href="https://dribbble.com/tlehren" target="_blank"><i class="fab fa-dribbble fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/in/tylerlehren/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <form data-netlify="true">
+                    <fieldset class="formGrid">
+                        <legend>Contact form</legend>
+                        <div class="form-control">
+                           <label for="firstName">First Name<span class="req">*</span></label>
+                           <input type="text" name="firstName" id="firstName" placeholder="Gary" required>
+                        </div>
+                        <div class="form-control">
+                           <label for="lastName">Last Name<span class="req">*</span></label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Glebus" required>
+                        </div>
+                        <div class="form-control">
+                           <label for="email">Email<span class="req">*</span></label>
+                            <input type="email" name="email" id="email" placeholder="glebus@glebusrealty.com" required>
+                        </div>
+                        <div class="form-control">
+                           <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone" placeholder="1234567">
+                        </div>
+                        <div class="form-control full">
+                            <label for="message">Your Message<span class="req">*</span></label>
+                            <textarea name="message" id="" cols="1" rows="1" required></textarea>
+                        </div>
+                        <button type="submit" class="btn full">Send It</button>
+                    </fieldset>
+               </form>
             </div>
-            
-      </section>
-      <!-- projects -->
-      <section class="projects">
-        <!-- Live Projects -->
-        <section class="live" id="work">
-          <div class="container py-5">
-            <div class="text-center">
-              <h2>Live Sites</h2>
-              <p>Projects built on Netlify using HTML, CSS, and JavaScript</p>
-            </div>
-            <div class="append"></div>
-          </div>
-        </section>
-        <!-- Live WP Projects -->
-        <section class="wp">
-          <div class="container py-5">
-            <div class="text-center">
-              <h2>Live Sites with WordPress</h2>
-              <p>Projects built on WordPress using OceanWP & Elementor</p>
-            </div>
-            <div class="append"></div>
-          </div>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- footer -->
     <footer class="footer">
-      <section class="cta">
-        <div class="container text-center py-5">
-          <h2>Dig my work?<br> Let's start a project.</h2>
-          <a href="#"><button class="btn">Contact Me</button></a>
-        </div>
-      </section>
-      <section class="footerBottom">
+    <section class="footerBottom">
         <div class="container flex py-4">
-          <div class="socialLinks">
+        <div class="socialLinks">
             <a href="https://github.com/tlehren" target="_blank"><i class="fab fa-github fa-lg"></i></a>
             <a href="https://www.behance.net/tylerlehren" target="_blank"><i class="fab fa-behance fa-lg"></i></a>
             <a href="https://dribbble.com/tlehren" target="_blank"><i class="fab fa-dribbble fa-lg"></i></a>
             <a href="https://www.linkedin.com/in/tylerlehren/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-          </div>
-          <p>Copyright &copy Tyler Lehren 2021</p>
         </div>
-      </section>
+        <p>Copyright &copy Tyler Lehren 2021</p>
+        </div>
+    </section>
     </footer>
   </body>
 </html>
