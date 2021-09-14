@@ -71,3 +71,20 @@
 .live {
   background-color: var(--secondary-bg);
 }
+
+/* success page */
+
+.success {
+  height: 100vh;
+}
+
+.success h1 {
+  text-transform: none;
+}
+
+.success img {
+  max-width: 25vw;
+}
+.success .flex {
+  flex-direction: column;
+}
