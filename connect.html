@@ -53,42 +53,31 @@
     <main class="main">
         <!-- contact form -->
         <section class="connect">
-            <div class="container grid py-5">
-                <div class="menuContact bg2">
-                    <h1>Let's Connect</h1>
-                    <p>Fill out the form our use one of the contact options below to get in touch!</p>
-                    <a href="mailto:tmlehren@gmail.com" class="link">tmlehren@gmail.com</a>
-                    <a href="tel:2035566329" class="link">(203)556-6329</a>
-                    <p><i class="fas fa-map-marker-alt fa-lg"></i>Burlington, VT</p>
-                    <div class="socialLinks">
-                        <a href="https://github.com/tlehren" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-                        <a href="https://www.behance.net/tylerlehren" target="_blank"><i class="fab fa-behance fa-lg"></i></a>
-                        <a href="https://dribbble.com/tlehren" target="_blank"><i class="fab fa-dribbble fa-lg"></i></a>
-                        <a href="https://www.linkedin.com/in/tylerlehren/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-                    </div>
-                </div>
+            <div class="container py-4">
+                <h1>Let's Connect</h1>
+                <p>Have a project idea that you'd like to talk about? Let's get the ball rolling.</p>
                 <form data-netlify="true">
                     <fieldset class="formGrid">
                         <legend>Contact form</legend>
                         <div class="form-control">
                            <label for="firstName">First Name<span class="req">*</span></label>
-                           <input type="text" name="firstName" id="firstName" placeholder="Gary" required>
+                           <input type="text" name="firstName" id="firstName" placeholder="Your name" required>
                         </div>
                         <div class="form-control">
                            <label for="lastName">Last Name<span class="req">*</span></label>
-                            <input type="text" name="lastName" id="lastName" placeholder="Glebus" required>
+                            <input type="text" name="lastName" id="lastName" placeholder="Your last name" required>
                         </div>
                         <div class="form-control">
                            <label for="email">Email<span class="req">*</span></label>
-                            <input type="email" name="email" id="email" placeholder="glebus@glebusrealty.com" required>
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
                         </div>
                         <div class="form-control">
                            <label for="phone">Phone</label>
-                            <input type="tel" name="phone" id="phone" placeholder="1234567">
+                            <input type="tel" name="phone" id="phone" placeholder="Your number">
                         </div>
                         <div class="form-control full">
                             <label for="message">Your Message<span class="req">*</span></label>
-                            <textarea name="message" id="" cols="1" rows="1" required></textarea>
+                            <textarea name="message" id="" cols="1" rows="1" placeholder="Start typing here" required></textarea>
                         </div>
                         <button type="submit" class="btn full">Send It</button>
                     </fieldset>

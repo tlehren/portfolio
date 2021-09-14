@@ -1,4 +1,7 @@
 /* form */
+form {
+  padding-top: 3em;
+}
 
 fieldset {
   border: none;
@@ -42,29 +45,25 @@ textarea:focus {
   color: var(--primary-color);
 }
 
-.formGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
-}
+@media (min-width: 1024px) {
+  .formGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
 
-.full {
-  grid-column: 1 / 3;
-}
+  .full {
+    grid-column: 1 / 3;
+  }
 
-.btn {
-  justify-self: end;
-}
+  .btn {
+    justify-self: end;
+  }
 
-.bg2 {
-  background-color: var(--secondary-color);
-  padding: 5rem;
-  border-radius: 2px;
-}
-
-.menuContact h1 {
-  color: var(--primary-bg);
-  padding-bottom: 1rem;
+  .main {
+    margin: auto;
+    width: 50%;
+  }
 }
