@@ -1,0 +1,82 @@
+/* intro */
+.intro {
+  background-color: var(--primary-bg);
+  animation: fade-in 1.5s;
+}
+
+.intro p {
+  padding: 1em 0;
+}
+
+.whoIMG {
+  max-width: 65%;
+  border-radius: 50%;
+  place-self: center;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+/* skills */
+
+.skills {
+  background-color: var(--secondary-bg);
+}
+
+@media (max-width: 769px) {
+  .skills {
+    margin: 0;
+  }
+}
+
+.skills i {
+  padding-bottom: 1rem;
+}
+
+.one i {
+  color: #e34c26;
+}
+
+.two i {
+  color: #264de4;
+}
+
+.three i {
+  color: #f0db4f;
+}
+
+.four i {
+  color: #21759b;
+}
+
+.five i {
+  color: #92003b;
+}
+
+.six i {
+  color: #21759b;
+}
+
+.skills .left i {
+  color: var(--primary-color);
+}
+
+.skills .card {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  border-radius: 2px;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 300px));
+  justify-content: center;
+  gap: 1em;
+  padding-top: 1em;
+}
+
+@media (max-width: 1024px) {
+  .skillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
