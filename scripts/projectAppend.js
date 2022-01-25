@@ -15,6 +15,7 @@ const liveProjectContent = liveProjects.map((liveProject) => {
       <a href=${liveProject.link2} class="btn btn-2" target="_blank">View Code</a>
     </div>
   </div>
+
 `;
 
   return projectsArticle;
@@ -40,6 +41,7 @@ const wpProjectContent = wpProjects.map((wpProject) => {
       <a href=${wpProject.link1} class="btn" target="blank">View Live Site</a>
     </div>
   </div>
+
 `;
 
   return projectsArticle;
