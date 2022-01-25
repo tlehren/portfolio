@@ -1,79 +1,28 @@
 /* Hero */
-.hero {
-  background-color: var(--primary-bg);
-  height: 75vh;
-  animation: fade-in 1.5s;
+
+.hero .container {
+  animation: fade-in 3s;
 }
 
 .hero .flex {
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-.hero h3 {
-  max-width: 40ch;
-  line-height: 1.5;
+.heroImage {
+  width: 100%;
+  max-width: 50%;
+  opacity: 50%;
 }
 
-.hero h3 {
-  font-weight: 300;
+/* about */
+video {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
 }
 
-.hero .cv {
-  background-color: transparent;
-  border: none;
-  color: var(--body);
-}
-
-.hero i {
-  padding-left: 0.5em;
-}
-
-.heroButtons {
-  display: flex;
-}
-
-@media (max-width: 760px) {
-  .heroButtons {
-    flex-direction: column-reverse;
-  }
-}
-
-/* Projects */
-
-.projects {
-  color: var(--text-color-alt);
-  animation: fade-in 1.5s;
-}
-
-.project .live {
-  animation: fade-in 1.5s;
-}
-
-.projects img {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-/* .projects .grid {
-  align-items: start;
-} */
-
-.project-item {
-  padding: 6rem 0;
-}
-
-.project-item p {
-  font-size: 0.9em;
-}
-
-@media (max-width: 760px) {
-  .project-item > p {
-    max-width: 100%;
-  }
-}
-
-.live {
-  background-color: var(--secondary-bg);
+.about .flex {
+  justify-content: space-between;
 }
 
 /* success page */
@@ -92,4 +41,79 @@
 }
 .success .flex {
   flex-direction: column;
+}
+
+/* contact */
+
+.contact {
+  height: initial;
+}
+
+.contact .container {
+  margin: auto;
+  width: 50%;
+}
+
+@media (max-width: 760px) {
+  .contact .container {
+    margin: auto;
+    width: 90%;
+  }
+}
+
+fieldset {
+  border: none;
+  width: 70%;
+  margin: 0 auto;
+}
+
+legend {
+  display: none;
+}
+
+label {
+  font-size: 0.7em;
+  font-weight: 700;
+  display: none;
+}
+
+label:focus {
+  color: var(--primary-color);
+}
+
+input,
+textarea {
+  border: none;
+  font-size: var(--fs-300);
+  color: var(--clr-black);
+  border-bottom: 1.5px solid var(--clr-black);
+  transition: 0.23s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.contact .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  border: 2px solid var(--clr-black);
+  margin-top: 1em;
+  margin-right: 0.5rem;
+  width: 100%;
+}
+
+/* footer */
+
+.footer p {
+  font-size: 0.8em;
 }
